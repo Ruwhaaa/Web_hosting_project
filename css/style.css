@@ -11,22 +11,21 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
 }
 
 header {
-    width: 100vw;
-    height: 40vh;
+    width: 99vw;
+    height: 35vh;
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;   
-    justify-content: center;
-    align-items: center;
 }
 
 nav {
     order: -1;
     width: 8.5vw;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     align-items: center;
     background-color: #23272A;
@@ -58,16 +57,30 @@ li a:hover {
     color: #FFFFFF;
 }
 
-header>h1 {
+.en_tete>h1 {
     color: #F0F6FC;
     letter-spacing: 0.3rem;
     font-weight: 700;
     border-bottom: #FFFFFF;
 }
 
-header>h2 {
+.en_tete>h2 {
     color :#F0F6FC;
 
+}
+
+.en_tete {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 100vh;
+    z-index: 3;
+    background-color: #0D1117;
 }
 
 footer {
