@@ -4,18 +4,21 @@
 }
 
 body {
-    font-family: "Roboto", "Open-Sans", "Arial";
-    background-color: #0D1117;
+    font-family: "Roboto Mono", "Open-Sans", "Arial";
+    background-image: url("../img/Hollowed-Boxes.svg");
+    font-size: 1rem;
 }
 
 main {
-    height: 27vh;
     display: flex;
 }
 
 header {
     width: 100vw;
-    display: flex;
+    height: 40vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;   
     justify-content: center;
     align-items: center;
 }
@@ -23,7 +26,7 @@ header {
 nav {
     order: -1;
     width: 8.5vw;
-    height: 27vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     background-color: #23272A;
@@ -36,12 +39,13 @@ nav:hover {
 
 nav>ul>li {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 li a {
     color: #C9D1CE;
     border-bottom: #0D1117;
+    letter-spacing: 0.13rem;
     text-decoration: none;
     outline: none;
     list-style: none;
@@ -50,13 +54,22 @@ li a {
 }
 
 li a:hover {
+    font-weight: 700;
     color: #FFFFFF;
 }
 
-h1 {
+header>h1 {
     color: #F0F6FC;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    border-bottom: #FFFFFF;
+}
+
+header>h2 {
+    color :#F0F6FC;
+
 }
 
 footer {
-    color: #F0F6FC
+    color: #F0F6FC;
 }
