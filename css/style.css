@@ -6,6 +6,9 @@
 body {
     font-family: "Roboto Mono", "Open-Sans", "Arial";
     background-image: url("../img/Hollowed-Boxes.svg");
+    scrollbar-face-color: #23272A;
+    scrollbar-track-color : #23272A;
+    scrollbar-arrow-color : #0D1117;
     font-size: 1rem;
 }
 
@@ -18,7 +21,7 @@ header {
     width: 99vw;
     height: 35vh;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.25);
     display: flex;   
 }
 
@@ -28,12 +31,9 @@ nav {
     height: 35vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #23272A;
     transition-property: color;
-}
-
-nav:hover {
-    background-color: #23272A;
 }
 
 nav>ul>li {
@@ -48,13 +48,37 @@ li a {
     text-decoration: none;
     outline: none;
     list-style: none;
-    margin-left: 1vw;
     padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li:nth-of-type(2) {
+    justify-content: center;
+    align-items: center;
+}
+.fa-camera {
+    font-size: 1rem;
+}
+
+ul:nth-child(1) {
+    padding: 0;
 }
 
 li a:hover {
     font-weight: 700;
-    color: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.svg {
+    height: 7vh;
+    width: 3.5vw;
+    margin-left: 0.6vw;
 }
 
 .en_tete>h1 {
