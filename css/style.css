@@ -10,6 +10,7 @@ html {
 body {
     font-family: "Roboto Mono", "Open-Sans", "Arial";
     background-image: url("../img/Hollowed-Boxes.svg");
+    background-attachment: fixed;
     scrollbar-face-color: #23272A;
     scrollbar-track-color : #23272A;
     scrollbar-arrow-color : #0D1117;
@@ -25,7 +26,7 @@ header {
     width: 99vw;
     height: 35vh;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.15);
     display: flex;   
 }
 
@@ -36,6 +37,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-right: 2px solid black;
     background-color: #23272A;
     transition-property: color;
 }
@@ -88,7 +90,7 @@ li:hover, a>i:hover {
 }
 
 h1>span {
-    color: tomato;
+    color: #be0f0f;
 }
 
 .en_tete>h2 {
