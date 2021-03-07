@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 100%;
+}
+
 body {
     font-family: "Roboto Mono", "Open-Sans", "Arial";
     background-image: url("../img/Hollowed-Boxes.svg");
@@ -27,7 +31,7 @@ header {
 
 nav {
     order: -1;
-    width: 8.5vw;
+    width: 10vw;
     height: 35vh;
     display: flex;
     align-items: center;
@@ -43,7 +47,6 @@ nav>ul>li {
 
 li a {
     color: #C9D1CE;
-    border-bottom: #0D1117;
     letter-spacing: 0.13rem;
     text-decoration: none;
     outline: none;
@@ -55,48 +58,51 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+
 }
 
-li:nth-of-type(2) {
+li:nth-of-type(1) {
+    font-size: 3rem;
+    margin: auto;
+    
+}
+
+li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(4), li:nth-of-type(5), li:nth-of-type(6)  {
+    margin-left: 0.6vw;
     justify-content: center;
     align-items: center;
 }
-.fa-camera {
-    font-size: 1rem;
-}
 
-ul:nth-child(1) {
-    padding: 0;
-}
-
-li a:hover {
+li:hover, a>i:hover {
     font-weight: 700;
-    fill: #FFFFFF;
-}
-
-.svg {
-    height: 7vh;
-    width: 3.5vw;
-    margin-left: 0.6vw;
+    color: tomato;
 }
 
 .en_tete>h1 {
     color: #F0F6FC;
-    letter-spacing: 0.3rem;
-    font-weight: 700;
-    border-bottom: #FFFFFF;
+    font-size: 5rem;
+    font-family: "M PLUS Rounded 1c";
+    letter-spacing: 0.5rem;
+    font-weight: 900;
+}
+
+h1>span {
+    color: tomato;
 }
 
 .en_tete>h2 {
     color :#F0F6FC;
-
+    font-size: 2.2rem;
+    letter-spacing: 0.4rem;
+    font-weight: 900;
 }
 
 .en_tete {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
