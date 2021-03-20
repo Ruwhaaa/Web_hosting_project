@@ -14,6 +14,7 @@ body {
     scrollbar-face-color: #23272A;
     scrollbar-track-color : #23272A;
     scrollbar-arrow-color : #0D1117;
+    color: white;
     font-size: 1rem;
 }
 
@@ -110,11 +111,24 @@ h1>span {
 }
 
 section {
+    color: white;
     height: 100vh;
-    z-index: 3;
+    z-index: 2;
     background-color: #0D1117;
 }
 
-footer {
-    color: #F0F6FC;
+.spoiler-content {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.5s;
+}
+
+.spoiler-content.visible {
+    display: inline;
+    width: auto;
+    height: auto;
+    opacity: 1;
 }
