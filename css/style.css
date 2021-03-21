@@ -10,6 +10,7 @@ html {
 body {
     font-family: "Roboto Mono", "Open-Sans", "Arial";
     background-image: url("../img/Hollowed-Boxes.svg");
+    width: 100%;
     background-attachment: fixed;
     scrollbar-face-color: #23272A;
     scrollbar-track-color : #23272A;
@@ -20,28 +21,48 @@ body {
 
 main {
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
 header {
-    width: 99vw;
-    height: 35vh;
+    width: 100%;
+    background-color: #23272A;
+    height: 5vh;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.15);
-    display: flex;   
+    display: flex;
+    justify-content: center;   
+}
+
+.sticky_menu>h1{
+    display: flex;
+    font-family: "M PLUS Rounded 1c";
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 2vw;
+    justify-content: flex-start;
+    width: 30vw;
+    order: -1;
 }
 
 .sticky_menu {
+    width: 100%;
     order: -1;
-    width: 10vw;
-    height: 35vh;
+    height: 5vh;
     display: flex;
-    z-index: 6;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     border-right: 2px solid black;
-    background-color: #23272A;
     transition-property: color;
+}
+
+.sticky_menu>p {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1vw;
+    width: 30vw;
 }
 
 .sticky_menu>ul>li {
@@ -58,22 +79,17 @@ li a {
     padding: 10px;
 }
 
-ul {
+ul { 
     display: flex;
-    flex-direction: column;
+    width: 37vw;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-ul>li:nth-of-type(1) {
-    font-size: 3rem;
-    margin: auto;
-    
-}
-
-li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(4), li:nth-of-type(5), li:nth-of-type(6)  {
-    margin-left: 0.6vw;
+li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(4), li:nth-of-type(5)  {
     justify-content: center;
     align-items: center;
 }
@@ -103,17 +119,15 @@ h1>span {
 }
 
 .en_tete {
-    height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-section {
+.page {
     color: white;
-    height: 300vh;
+    height: 100vh;
     z-index: 2;
     background-color: #0D1117;
 }
@@ -132,4 +146,12 @@ section {
     width: auto;
     height: auto;
     opacity: 1;
+}
+
+.caroussel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.15);
 }
