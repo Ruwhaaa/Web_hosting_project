@@ -59,7 +59,7 @@ header {
     transition-property: color;
 }
 
-.sticky_menu>p {
+.sticky_menu>div {
     display: flex;
     justify-content: flex-end;
     margin-right: 1vw;
