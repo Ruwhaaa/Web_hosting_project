@@ -108,7 +108,16 @@ li:hover, a>i:hover {
     font-weight: 900;
 }
 
-h1>span {
+h1>a {
+    color: #F0F6FC;
+    font-size: 2rem;
+    font-family: "M PLUS Rounded 1c";
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+h1>span, h1>a>span {
     color: #be0f0f;
 }
 
