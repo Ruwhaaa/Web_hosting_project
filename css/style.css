@@ -27,46 +27,76 @@ main {
 
 header {
     width: 100%;
-    background-color: #23272A;
-    height: 6vh;
+    background: linear-gradient(90deg, rgba(35,39,42,1) 40%, rgba(190,15,15,1) 100%);;
+    height: 60px;
     z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.sticky_menu>h1{
-    display: flex;
+.sticky_menu > h1{
     font-family: "M PLUS Rounded 1c";
     letter-spacing: 0.15rem;
     font-weight: 900;
     font-size: 2rem;
     margin-left: 2vw;
     justify-content: flex-start;
-    width: 30vw;
     order: -1;
 }
 
 .sticky_menu {
+    display: flex;
+    align-items: center;
     width: 100%;
     order: -1;
-    height: 5vh;
-    display: flex;
+    height: 60px;
     z-index: 2;
-    align-items: center;
-    justify-content: center;
-    border-right: 2px solid black;
+    display: grid;
+    grid-template-rows: 12fr;
+    grid-template-columns: 3fr 500px 9fr;
     transition-property: color;
 }
 
-.sticky_menu>div {
+form {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 1vw;
-    width: 30vw;
+    margin-right: 6vw;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
 }
 
-.sticky_menu>ul>li {
+input{
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 25px;
+    line-height: 10px;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    border-radius: 20px;
+}
+    
+.fa{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+i.fa.fa-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+form:hover .fa{
+    background: rgba(35,39,42,1);
+    color: white;
+}
+ 
+.sticky_menu > ul > li {
     display: flex;
     font-size: 1.1rem;
 }
@@ -82,7 +112,7 @@ li a {
 
 ul { 
     display: flex;
-    width: 37vw;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     justify-content: space-between;
@@ -95,12 +125,12 @@ li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(4), li:n
     align-items: center;
 }
 
-li:hover, a>i:hover {
+li:hover, a > i:hover {
     font-weight: 700;
-    color: tomato;
+    color :rgba(224, 12, 12, 1);
 }
 
-.en_tete>h1 {
+.en_tete > h1 {
     color: #F0F6FC;
     font-size: 5rem;
     font-family: "M PLUS Rounded 1c";
@@ -108,7 +138,7 @@ li:hover, a>i:hover {
     font-weight: 900;
 }
 
-h1>a {
+h1 > a {
     color: #F0F6FC;
     font-size: 2rem;
     font-family: "M PLUS Rounded 1c";
@@ -117,11 +147,11 @@ h1>a {
     text-decoration: none;
 }
 
-h1>span, h1>a>span {
+h1 > span, h1 > a > span {
     color: #be0f0f;
 }
 
-.en_tete>h2 {
+.en_tete > h2 {
     color :#F0F6FC;
     font-size: 2.2rem;
     letter-spacing: 0.4rem;
