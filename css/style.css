@@ -167,12 +167,12 @@ h1 > span, h1 > a > span {
 
 .grille {
     display: grid;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 85%;
-    grid-template-rows: 1.5fr 1.5fr 3fr 3fr;
-    row-gap: 100px;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr;
+    row-gap: 50px;
     grid-template-columns: 3fr 3fr 3fr 3fr;
-    column-gap: 50px;
+    column-gap: 35px;
     z-index: 2;
 }
 
@@ -182,7 +182,7 @@ h1 > span, h1 > a > span {
     justify-content: center;
     z-index: 2;
     color: white;
-    height: 200vh;
+    height: 100vh;
     background-color: #141313;
 }
 
