@@ -220,13 +220,3 @@ h1 > span, h1 > a > span {
     height: 50vh;
     background-color: #be0f0f;
 }
-
-.pied_de_page {
-    display: flex;
-    justify-content: center;
-}
-
-.pied_de_page>img {
-    height: 300px;
-    width: 300px;
-}
