@@ -1,0 +1,28 @@
+@media (max-width: 1200px) {     
+    #menu > ul {
+        position: absolute;
+        z-index: -1;
+        width: 250px;  
+    }
+
+    #menu > h1 {
+        cursor: pointer;
+    }
+
+    .show-menu {
+        transform: translateY(60px);
+        transition: 3s ease-out;
+        display: block;
+    }
+
+    ul {
+        display: none;
+        transition: 3s ease-out;
+    }
+
+    li {
+        padding: 10px;
+        height: 50px;
+        background: #111;
+    }
+}
