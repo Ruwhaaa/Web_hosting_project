@@ -219,7 +219,7 @@ li > a:hover {
     z-index: 2;
     color: white;
     height: 200vh;
-    background-color: #141313;
+    background: linear-gradient(180deg, rgba(27,31,32,0.999) 55%, rgba(190,15,15,1) 95%);
 }
 
 .grille > iframe {
