@@ -205,7 +205,6 @@ li > a:hover {
     row-gap: 100px;
     grid-template-columns: repeat(auto-fill, 480px);
     column-gap: 50px;
-    margin-bottom: 100px;
     z-index: 2;
 }
 
@@ -215,10 +214,10 @@ li > a:hover {
     justify-content: center;
     z-index: 2;
     color: white;
-    background: linear-gradient(180deg, rgba(27,31,32,0.999) 55%, rgba(190,15,15,1) 95%);
+    background-color: #101313;
 }
 
-.grille > img {
+.grille > .image {
     width: 480px;
     height: 270px;
     background-color: #23272A;
@@ -230,11 +229,11 @@ li > a:hover {
     justify-content: center;
     align-items: center;
     height: 440px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 footer {
-    background-color: #be0f0f;
+    background: linear-gradient(180deg, rgba(16,19,19,0.999) 17%, rgba(190,15,15,1) 100%);
     height: 50vh;
 }
 
