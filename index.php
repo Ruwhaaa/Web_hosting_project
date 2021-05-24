@@ -14,14 +14,14 @@
             <nav id="menu">
                 <h1><span class="zozo">Zozo</span><span class="tube">tube</span></h1>
                 <ul>
-                    <li><i class="fas fa-id-card"></i><a href="index.html" title="Compte">Compte</a></li>
+                    <li><i class="fas fa-id-card"></i><a href="index.php" title="Compte">Compte</a></li>
                     <li><i class="fas fa-images"></i><a href="image.html" title="IMAGE">Image</a></li>
                     <li><i class="fas fa-server"></i><a href="forum.html" title="Forum">Forum</a></li>
                     <li><i class="fas fa-user-secret"></i><a href="a_propos.html" title="A PROPOS">A propos</a></li>
                 </ul>
-                <form action="GET">
+                <form action="php/traitement.php" method="post">
                     <label>
-                        <input type="search">
+                        <input type="input" name="search" required>
                     </label>
                     <i class="fa fa-search"></i>
                 </form>
@@ -50,9 +50,9 @@
             </div>
         </section>
     </main>
-    <footer class= "pied_de_page"></footer>
+    <footer class= "pied_de_page">
+    </footer>
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script src="js/api.js"></script>
 </body>
 </html>

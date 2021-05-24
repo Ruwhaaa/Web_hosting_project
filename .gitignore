@@ -43,3 +43,6 @@ Thumbs.db
 /package-lock.json
 /idea
 /googlefb2a6eefbc41e2b4.html
+/.idea
+/composer.lock
+/vendor/

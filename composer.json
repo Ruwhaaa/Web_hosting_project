@@ -1,0 +1,13 @@
+{
+    "name": "youtube/project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Enzo Tessonnieres",
+            "email": "enzo.tessonnieres@outlook.fr"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0"
+    }
+}

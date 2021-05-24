@@ -15,9 +15,9 @@
             <h1><span class="zozo">Zozo</span><span class="tube">tube</span></h1>
             <ul>
                 <li><i class="fas fa-id-card"></i><a href="index.html" title="Compte">Compte</a></li>
-                <li><i class="fas fa-images"></i><a href="image.html" title="IMAGE">Image</a></li>
-                <li><i class="fas fa-server"></i><a href="forum.html" title="Forum">Forum</a></li>
-                <li><i class="fas fa-user-secret"></i><a href="a_propos.html" title="A PROPOS">A propos</a></li>
+                <li><i class="fas fa-images"></i><a href="image.php" title="IMAGE">Image</a></li>
+                <li><i class="fas fa-server"></i><a href="forum.php" title="Forum">Forum</a></li>
+                <li><i class="fas fa-user-secret"></i><a href="a_propos.php" title="A PROPOS">A propos</a></li>
             </ul>
             <form action="GET">
                 <label>
@@ -35,7 +35,7 @@
     </section>
     <section class="page">
         <div class="grille">
-            <img src="">
+            <img src="#">
             <img src="">
             <img src="">
             <img src="">
