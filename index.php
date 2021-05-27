@@ -1,3 +1,15 @@
+<?php
+require("php/youtube.php");
+
+session_start();
+
+if ($_SESSION["check"] === 'CHECK') {
+    if (isset($_SESSION["search"])) {
+        $search = $_SESSION["search"];
+        $response = youtube($search);
+    };
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -35,18 +47,12 @@
         </section>
         <section class="page">
             <div class="grille">
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
+                <?php if (isset($response) && !empty($response)):
+                    foreach ($response['items'] as $video): ?>
+                    <div class="image"></div>
+                    <?php endforeach; ?>
+                <?php endif;
+                session_destroy();?>
             </div>
         </section>
     </main>
